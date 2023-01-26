@@ -1,7 +1,12 @@
 {
   "index": "Introduction",
-  "risk": "Risk Page",
   "graphs": "Dashboard",
+  "diary": "Diary",
+  "risk": "Risk Page",
+  "premiums": "Premiums",
+  "management": "Management",
+  "ledger": "Ledger",
+  "reports": "Reports",
   "about": {
     "title": "About",
     "type": "page"
