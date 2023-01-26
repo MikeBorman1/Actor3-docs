@@ -1,27 +1,34 @@
-import Image from 'next/image'
- 
-## On load
+# Risks
 
-We can show off images like this
+The risk page is where all the created risks will be shown in table format.
 
-![](../public/riskpage.png)
+Upon loading the page there will be no risks displayed, it is up to the user to either
 
-we can do ~~strikethough~~
+a) search for the risk using the filters section
+b) show all risks by clicking the "show all" button
+
+## Displayed Data
+
+ - **Quote Ref** -  This is a unique identifer given to each risk on creation
+ - **Policy Ref** - This is a unique identifier given to each risk depending on the agencies needs, this can be when a risk goes live for example or any other stage in the process.
+ - **Insured** - The name of the Insured
+ - **Policy Type** - This is chosen on creation of a risk, each agency will have their own policy sets depending on their business
+ - **Risk Status** - This will show the status of the risk and can show: Cancelled, Enquiry, CFI, Quote, Live, Not Pursued, NTU, Pending, VRI, Declined, Referral to UW
+ - **Inception Date** - Date the risk incepts
+ - **Underwriting Year** - Shown in their is an Inception Date
+ - **Broker**
+ - **RiskID** - This is the systems unique ID for the risk
 
 
-or do Task Lists
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
+## Creating a Risk
 
+To Create a risk a user will need to have the required permisiions to do so.
 
-And Tables 
-| Syntax        | Description |   Test Text |
-| :------------ | :---------: | ----------: |
-| Header        |    Title    | Here's this |
-| Paragraph     |    Text     |    And more |
-| Strikethrough |             |    ~~Text~~ |
+There is a Add risk button on the top of the page.
 
-or embed youtube videos
+When clicked the user will be propted for a set of questions.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0gx3hMMDOZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+1. Select Policy Type - The policy Type for the risk will need to be selected here. **This cannot be changed on the risk unless set up to do so!**
+2. Select Underwriting group - This is dependant on the binder setup the agency has.
+
+Once selected, the user will be taken to the [Risk Info Page](/risk/riskinfo)
